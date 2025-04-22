@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Porcentagem | Navega Útil</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <h1>Calculadora de Porcentagem</h1>
+        <p>Escolha o tipo de cálculo e preencha os campos.</p>
+
+        <div style="display: flex; flex-direction: column; max-width: 320px; margin: 2rem auto 0 auto; gap: 10px;">
+            <select id="tipo">
+                <option value="1">Quanto é X% de Y?</option>
+                <option value="2">X é quantos % de Y?</option>
+                <option value="3">Qual a variação de X para Y?</option>
+            </select>
+
+            <input type="number" id="valor1" placeholder="Valor 1">
+            <input type="number" id="valor2" placeholder="Valor 2">
+            <button onclick="calcularPorcentagem()">Calcular</button>
+
+            <p id="resultado" style="font-weight: bold; margin-top: 1rem;"></p>
+            <p id="explicacao" style="font-size: 0.95rem; color: #444;"></p>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="porcentagem.js"></script>
+</body>
+
+</html>
