@@ -188,3 +188,36 @@ iframe#mapa {
     border: none;
     border-radius: 4px;
 }
+
+.apoie-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.apoie-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.apoie-qrcode img {
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apoie-copiaecola input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}

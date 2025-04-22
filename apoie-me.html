@@ -7,13 +7,12 @@
     <title>Apoie o Projeto</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-2662XNH7F6');
     </script>
 </head>
@@ -32,18 +31,33 @@
         <nav id="menu">
             <a href="index.html">Home</a>
             <a href="consulta-cep/consulta-cep.html">Consulta CEP</a>
+            <a href="contador-dias/contador-dias.html">Dias Restantes</a>
             <a href="apoie-me.html">Apoie-me</a>
         </nav>
     </header>
 
-    <main>
+    <main class="apoie-container">
         <h1>Apoie o Projeto</h1>
-        <p>Esse site é feito de forma independente e com simplicidade, pra te entregar ferramentas úteis sem enrolação.
-        </p>
-        <p>Se quiser apoiar o projeto com qualquer valor, ficarei muito grato. Em breve você poderá apoiar via Pix
-            direto por aqui!</p>
+        <p>Este site foi criado com simplicidade e dedicação, com o objetivo de te oferecer ferramentas úteis de forma
+            leve e prática.</p>
+        <p>Se você gostou do conteúdo e quiser apoiar, qualquer valor faz diferença!</p>
 
-        <button class="btn-apoie" onclick="alert('Em breve você poderá apoiar com Pix!')">Quero apoiar 💖</button>
+        <div class="apoie-box">
+            <div class="apoie-qrcode">
+                <p><strong>Escaneie o QR Code:</strong></p>
+                <img src="imgs/qr-pix.png" alt="QR Code do Pix" />
+            </div>
+
+            <div class="apoie-copiaecola">
+                <p><strong>Ou copie o código Pix:</strong></p>
+                <input type="text" id="pix-codigo"
+                    value="00020126820014br.gov.bcb.pix0136826f646a-9488-466a-ac6d-bc76a0db68f00220Obrigado por ajudar 5204000053039865802BR5925William Silveira Teixeira6008Brasilia62230519daqr20519228529591463044A8C"
+                    readonly>
+                <button class="btn-apoie" onclick="copiarPix()">Copiar código Pix</button>
+            </div>
+        </div>
+
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: #555;">Muito obrigado pelo apoio! 💚</p>
     </main>
 
     <footer>
@@ -51,6 +65,15 @@
     </footer>
 
     <script src="menu.js"></script>
+    <script>
+        function copiarPix() {
+            const input = document.getElementById("pix-codigo");
+            input.select();
+            input.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("Código Pix copiado!");
+        }
+    </script>
 </body>
 
 </html>
