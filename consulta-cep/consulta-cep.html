@@ -22,17 +22,16 @@
     <header></header>
 
     <main>
+        <h1>Consulta de CEP</h1>
+        <form class="calc-form">
+            <input type="text" id="cep" placeholder="Digite o CEP">
+            <button type="button" id="buscar">Buscar</button>
+        </form>
+    
         <div class="cep-container">
-            <h1>Consulta de CEP</h1>
-            <div class="form-group">
-                <input type="text" id="cep" placeholder="Digite o CEP">
-                <button id="buscar">Buscar</button>
-            </div>
-            <div class="resultado">
-                <div id="cepInfo"></div>
-                <iframe id="mapa" width="100%" height="250" style="border:0" loading="lazy" allowfullscreen
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <div id="cepInfo"></div>
+            <iframe id="mapa" width="100%" height="250" style="border:0" loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
 

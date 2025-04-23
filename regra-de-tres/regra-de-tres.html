@@ -26,14 +26,15 @@
         <h1>Regra de 3 Simples</h1>
         <p>Preencha 3 valores para calcular o quarto.</p>
 
-        <div style="display: flex; flex-direction: column; max-width: 300px; margin: 2rem auto 0 auto; gap: 10px;">
+        <form class="calc-form">
             <input type="number" id="valor1" placeholder="Valor 1">
             <input type="number" id="valor2" placeholder="Valor 2">
             <input type="number" id="valor3" placeholder="Valor 3">
-            <button onclick="calcularRegraDeTres()">Calcular</button>
-            <p id="resultado" style="font-weight: bold; margin-top: 1rem;"></p>
-            <p id="explicacao" style="font-size: 0.95rem; color: #444;"></p>
-        </div>
+            <button type="button" onclick="calcularRegraDeTres()">Calcular</button>
+            <p id="resultado"></p>
+            <p id="explicacao"></p>
+        </form>
+
     </main>
 
     <footer></footer>

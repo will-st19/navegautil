@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC | Navega Útil</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <p>Informe seu peso e altura para calcular o Índice de Massa Corporal (IMC).</p>
+
+        <form class="calc-form">
+            <input type="number" id="peso" placeholder="Peso (kg)" step="0.1" required />
+            <input type="number" id="altura" placeholder="Altura (m)" step="0.01" required />
+            <button type="button" onclick="calcularIMC()">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+        <div id="historinha"></div>
+
+        <h2>Classificação</h2>
+        <table style="width:100%; max-width: 500px; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid #ccc; padding: 8px;">IMC</th>
+                    <th style="border: 1px solid #ccc; padding: 8px;">Classificação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Menor que 18,5</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">18,5 a 24,9</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Peso ideal</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">25 a 29,9</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ccc; padding: 8px;">30 ou mais</td>
+                    <td style="border: 1px solid #ccc; padding: 8px;">Obesidade</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="imc.js"></script>
+</body>
+
+</html>

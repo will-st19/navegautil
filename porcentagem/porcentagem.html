@@ -26,7 +26,7 @@
         <h1>Calculadora de Porcentagem</h1>
         <p>Escolha o tipo de cálculo e preencha os campos.</p>
 
-        <div style="display: flex; flex-direction: column; max-width: 320px; margin: 2rem auto 0 auto; gap: 10px;">
+        <form class="calc-form">
             <select id="tipo">
                 <option value="1">Quanto é X% de Y?</option>
                 <option value="2">X é quantos % de Y?</option>
@@ -35,11 +35,11 @@
 
             <input type="number" id="valor1" placeholder="Valor 1">
             <input type="number" id="valor2" placeholder="Valor 2">
-            <button onclick="calcularPorcentagem()">Calcular</button>
+            <button type="button" onclick="calcularPorcentagem()">Calcular</button>
 
-            <p id="resultado" style="font-weight: bold; margin-top: 1rem;"></p>
-            <p id="explicacao" style="font-size: 0.95rem; color: #444;"></p>
-        </div>
+            <p id="resultado"></p>
+            <p id="explicacao"></p>
+        </form>
     </main>
 
     <footer></footer>

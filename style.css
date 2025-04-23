@@ -344,12 +344,15 @@ nav {
         color: #f0f0f0;
     }
 
-    header, nav, footer {
+    header,
+    nav,
+    footer {
         background-color: #1f1f1f;
         border-color: #444;
     }
 
-    .dropbtn, nav a {
+    .dropbtn,
+    nav a {
         color: #cceeff;
     }
 
@@ -380,4 +383,67 @@ nav {
     iframe#mapa {
         filter: brightness(0.9);
     }
+}
+
+
+/* Estilo padrão para formulários de cálculo (IMC, Regra de 3, etc) */
+.calc-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2rem;
+    max-width: 320px;
+}
+
+.calc-form input {
+    padding: 10px;
+    font-size: 16px;
+    min-width: 160px;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calc-form button {
+    background-color: #004466;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 160px;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+
+.calc-form button:hover {
+    background-color: #006688;
+}
+
+.calc-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    max-width: 200px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .calc-form select {
+        background-color: #1f1f1f;
+        color: #f0f0f0;
+        border-color: #666;
+    }
+}
+
+
+/* Margem entre historinha e tabela */
+#historinha {
+    margin-bottom: 1.5rem;
 }
