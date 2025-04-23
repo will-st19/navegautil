@@ -221,3 +221,163 @@ iframe#mapa {
     border: 1px solid #ccc;
     text-align: center;
 }
+
+/* Dropdowns no menu */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #004466;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 8px;
+}
+
+.dropbtn:hover {
+    background-color: #e1f0f5;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: #004466;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e1f0f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        position: static;
+        border: none;
+        background-color: transparent;
+    }
+
+    .dropdown-content a {
+        padding-left: 1.5rem;
+    }
+}
+
+
+/* Dropdown simples para o menu */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #004466;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.dropbtn:hover {
+    background-color: #e1f0f5;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: #004466;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e1f0f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ajustes para modo escuro forçado do navegador */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+
+    header, nav, footer {
+        background-color: #1f1f1f;
+        border-color: #444;
+    }
+
+    .dropbtn, nav a {
+        color: #cceeff;
+    }
+
+    .dropdown-content {
+        background-color: #2a2a2a;
+        border-color: #555;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #333;
+    }
+
+    .btn-apoie {
+        background-color: #2e7d32;
+    }
+
+    .btn-apoie:hover {
+        background-color: #1b5e20;
+    }
+
+    .cep-form input,
+    .apoie-copiaecola input {
+        background-color: #1f1f1f;
+        color: #fff;
+        border-color: #666;
+    }
+
+    iframe#mapa {
+        filter: brightness(0.9);
+    }
+}
