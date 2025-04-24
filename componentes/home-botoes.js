@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { texto: "Dias entre Datas", link: "diferenca-datas/diferenca-datas.html" },
         { texto: "Dias Restantes", link: "contador-dias/contador-dias.html" },
         { texto: "Que horas são?", link: "agora-exatamente/agora-exatamente.html" },
+        { texto: "Resumo CSV", link: "resumo-csv/resumo-csv.html"},
         { texto: "Apoie o Projeto", link: "apoie-me.html" }
     ];
 
