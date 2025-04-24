@@ -447,3 +447,70 @@ nav {
 #historinha {
     margin-bottom: 1.5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+
+    header,
+    nav,
+    footer {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: #ccc !important;
+    }
+
+    nav a,
+    .dropbtn,
+    .dropdown-content a {
+        color: #004466 !important;
+        background-color: #ffffff !important;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #e1f0f5 !important;
+    }
+
+    input,
+    select,
+    .btn-apoie {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: #ccc !important;
+    }
+
+    iframe#mapa {
+        filter: none !important;
+    }
+}
+
+.home-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.home-btn {
+    background-color: #004466;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.home-btn:hover {
+    background-color: #006688;
+}
+
+@media (max-width: 600px) {
+    .home-btn {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}
