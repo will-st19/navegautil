@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador de Dias | Navega Útil</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Contador de Dias</h1>
+        <p>Escolha duas datas e veja quantos dias se passaram entre elas.</p>
+
+        <div style="justify-content: center;">
+            <form class="calc-form">
+                <input type="date" id="dataInicio" />
+                <input type="date" id="dataFim" />
+                <button type="button" onclick="calcularDias()">Calcular</button>
+                <p id="resultado" style="font-weight: bold; margin-top: 1rem;"></p>
+                <p id="explicacao" style="font-size: 0.95rem; color: #444;"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="diferenca-datas.js"></script>
+</body>
+
+</html>

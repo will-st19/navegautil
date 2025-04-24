@@ -494,23 +494,19 @@ nav {
     margin-top: 2rem;
 }
 
-.home-btn {
+.btn-home {
+    width: 100%;
+    max-width: 300px;
     background-color: #004466;
     color: white;
     padding: 12px 20px;
-    border-radius: 5px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.2s;
+    transition: background-color 0.2s ease;
+    text-align: center;
 }
 
-.home-btn:hover {
+.btn-home:hover {
     background-color: #006688;
-}
-
-@media (max-width: 600px) {
-    .home-btn {
-        flex: 1 1 100%;
-        text-align: center;
-    }
 }
