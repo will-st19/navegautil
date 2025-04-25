@@ -347,7 +347,6 @@ nav {
     .dropdown-content,
     input,
     select,
-    .btn-apoie,
     .cep-form input,
     .apoie-copiaecola input {
         background-color: #ffffff !important;
@@ -363,6 +362,12 @@ nav {
 
     .dropdown-content a:hover {
         background-color: #e1f0f5 !important;
+    }
+
+    .btn-apoie {
+        background-color: #28a745 !important;
+        color: white !important;
+        border-color: #28a745 !important;
     }
 
     iframe#mapa {
@@ -458,3 +463,11 @@ nav {
 .btn-home:hover {
     background-color: #006688;
 }
+
+#dicaTexto {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #004466;
+    max-width: 600px;
+    line-height: 1.6;
+  }
