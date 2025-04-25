@@ -339,53 +339,37 @@ nav {
 
 /* Ajustes para modo escuro forçado do navegador */
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #121212;
-        color: #f0f0f0;
-    }
 
+    body,
     header,
     nav,
-    footer {
-        background-color: #1f1f1f;
-        border-color: #444;
+    footer,
+    .dropdown-content,
+    input,
+    select,
+    .btn-apoie,
+    .cep-form input,
+    .apoie-copiaecola input {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: #ccc !important;
     }
 
     nav a,
     .dropbtn,
     .dropdown-content a {
-        color: #cceeff;
-    }
-
-    .dropdown-content {
-        background-color: #2a2a2a;
-        border-color: #555;
+        color: #004466 !important;
     }
 
     .dropdown-content a:hover {
-        background-color: #333;
-    }
-
-    .btn-apoie {
-        background-color: #2e7d32;
-        color: #fff;
-    }
-
-    .btn-apoie:hover {
-        background-color: #1b5e20;
-    }
-
-    .cep-form input,
-    .apoie-copiaecola input {
-        background-color: #1f1f1f;
-        color: #fff;
-        border-color: #666;
+        background-color: #e1f0f5 !important;
     }
 
     iframe#mapa {
-        filter: brightness(0.9);
+        filter: none !important;
     }
 }
+
 
 
 /* Estilo padrão para formulários de cálculo (IMC, Regra de 3, etc) */
