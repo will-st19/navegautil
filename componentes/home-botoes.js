@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { texto: "Que horas são?", link: "agora-exatamente/agora-exatamente.html" },
         { texto: "Dica do Dia", link: "dica-do-dia/dica-do-dia.html" },
         { texto: "Resumo CSV", link: "resumo-csv/resumo-csv.html"},
+        { texto: "Frases para Status", link: "frases-status/frases-status.html"},
         { texto: "Apoie o Projeto", link: "apoie-me.html" }
     ];
 

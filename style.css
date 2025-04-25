@@ -108,6 +108,17 @@ footer {
     margin-top: auto;
 }
 
+footer a {
+    color: #004466;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 .btn-apoie {
     background-color: #28a745;
     color: white;
@@ -343,7 +354,6 @@ nav {
     body,
     header,
     nav,
-    footer,
     .dropdown-content,
     input,
     select,
@@ -470,4 +480,16 @@ nav {
     color: #004466;
     max-width: 600px;
     line-height: 1.6;
-  }
+}
+
+#fraseBox {
+    background-color: #f4f9fb;
+    border-left: 4px solid #004466;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    color: #004466;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}

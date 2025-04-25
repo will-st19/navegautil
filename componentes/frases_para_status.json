@@ -1,0 +1,418 @@
+[
+  {
+    "id": 1,
+    "frase": "Hoje é um ótimo dia pra fazer nada e não se culpar por isso."
+  },
+  {
+    "id": 2,
+    "frase": "Se a vida te der limões, procure alguém com tequila."
+  },
+  {
+    "id": 3,
+    "frase": "Meta do dia: sobreviver sem reclamar em voz alta."
+  },
+  {
+    "id": 4,
+    "frase": "Não tá fácil, mas também não tá impossível."
+  },
+  {
+    "id": 5,
+    "frase": "Cansado? Normal. Continue mesmo assim."
+  },
+  {
+    "id": 6,
+    "frase": "O caos está em alta, aproveite para dançar no meio dele."
+  },
+  {
+    "id": 7,
+    "frase": "Você não precisa ser o melhor, só não desista de si mesmo."
+  },
+  {
+    "id": 8,
+    "frase": "Siga firme, mesmo quando tudo parecer mole."
+  },
+  {
+    "id": 9,
+    "frase": "Tem dia que a vitória é só levantar da cama."
+  },
+  {
+    "id": 10,
+    "frase": "Respira, ajeita a postura e finge costume."
+  },
+  {
+    "id": 11,
+    "frase": "Se ninguém te notou hoje, parabéns: você evitou drama."
+  },
+  {
+    "id": 12,
+    "frase": "Nem todo status precisa fazer sentido. Esse, por exemplo."
+  },
+  {
+    "id": 13,
+    "frase": "Só o boleto sabe o quanto você é esforçado."
+  },
+  {
+    "id": 14,
+    "frase": "Persistir também é arte. Às vezes meio teimosa."
+  },
+  {
+    "id": 15,
+    "frase": "A vida é um teste. Pena que não avisaram qual matéria cai."
+  },
+  {
+    "id": 16,
+    "frase": "Café resolve 12% dos problemas. O resto é só fé."
+  },
+  {
+    "id": 17,
+    "frase": "Hoje você deu o seu pior? Tá tudo bem, amanhã tem mais."
+  },
+  {
+    "id": 18,
+    "frase": "Ser adulto é pagar pra existir. Literalmente."
+  },
+  {
+    "id": 19,
+    "frase": "Quem madruga... toma café sozinho."
+  },
+  {
+    "id": 20,
+    "frase": "Você é incrível. Só tá cansado."
+  },
+  {
+    "id": 21,
+    "frase": "Calma, já deu tudo errado mesmo."
+  },
+  {
+    "id": 22,
+    "frase": "Quando tudo falha, durma."
+  },
+  {
+    "id": 23,
+    "frase": "Spoiler: nem os mais organizados sabem o que estão fazendo."
+  },
+  {
+    "id": 24,
+    "frase": "Tem gente postando frase e nem tá tentando. Você tá."
+  },
+  {
+    "id": 25,
+    "frase": "Já é um começo: você abriu essa página."
+  },
+  {
+    "id": 26,
+    "frase": "Amanhã a gente tenta de novo. Hoje, só aceita."
+  },
+  {
+    "id": 27,
+    "frase": "Talvez o problema nem seja você. Talvez."
+  },
+  {
+    "id": 28,
+    "frase": "Respira, disfarça e manda uma figurinha."
+  },
+  {
+    "id": 29,
+    "frase": "Se deu errado, chama de aprendizado e bola pra frente."
+  },
+  {
+    "id": 30,
+    "frase": "Sorria! Você ainda não foi demitido hoje."
+  },
+  {
+    "id": 31,
+    "frase": "A motivação de hoje está de folga."
+  },
+  {
+    "id": 32,
+    "frase": "Dá pra ser leve mesmo nos dias pesados."
+  },
+  {
+    "id": 33,
+    "frase": "O importante é seguir, mesmo tropeçando."
+  },
+  {
+    "id": 34,
+    "frase": "Sorte a sua que o pensamento não aparece em balões."
+  },
+  {
+    "id": 35,
+    "frase": "Você é o protagonista do seu caos."
+  },
+  {
+    "id": 36,
+    "frase": "Às vezes tudo o que você precisa é um pão de queijo."
+  },
+  {
+    "id": 37,
+    "frase": "Lave o rosto, não a alma. Essa já foi muito enxaguada."
+  },
+  {
+    "id": 38,
+    "frase": "Hoje o mundo não vai acabar. Mas parece, né?"
+  },
+  {
+    "id": 39,
+    "frase": "Não se cobre tanto, já tem boleto pra isso."
+  },
+  {
+    "id": 40,
+    "frase": "Tá difícil? Cola aqui e finge que tá tudo sob controle."
+  },
+  {
+    "id": 41,
+    "frase": "Foque no que importa. O resto, ignora bonito."
+  },
+  {
+    "id": 42,
+    "frase": "Até quem parece saber tudo tá improvisando."
+  },
+  {
+    "id": 43,
+    "frase": "Entre um tropeço e outro, você tá indo."
+  },
+  {
+    "id": 44,
+    "frase": "Não se explica, se cuida."
+  },
+  {
+    "id": 45,
+    "frase": "Ninguém tá vencendo. Tá todo mundo só tentando."
+  },
+  {
+    "id": 46,
+    "frase": "O segredo? Fazer o mínimo com dignidade."
+  },
+  {
+    "id": 47,
+    "frase": "Já tomou água hoje? Isso já é 1 XP de autocuidado."
+  },
+  {
+    "id": 48,
+    "frase": "Pior do que tá... pode ficar. Por isso respira."
+  },
+  {
+    "id": 49,
+    "frase": "Parabéns por não explodir hoje. É uma vitória."
+  },
+  {
+    "id": 50,
+    "frase": "Deu ruim? Finge que era o plano."
+  },
+  {
+    "id": 51,
+    "frase": "Se der medo, vai com medo mesmo."
+  },
+  {
+    "id": 52,
+    "frase": "Hoje não rendeu? Amanhã tenta render o dobro. Ou não."
+  },
+  {
+    "id": 53,
+    "frase": "Se o dia foi um caos, ao menos foi gratuito."
+  },
+  {
+    "id": 54,
+    "frase": "Você não precisa salvar o mundo. Só sair dele de vez em quando."
+  },
+  {
+    "id": 55,
+    "frase": "Pensando demais? Desliga o cérebro por 5 minutinhos."
+  },
+  {
+    "id": 56,
+    "frase": "Sofrer por antecipação é como pagar antes do boleto chegar."
+  },
+  {
+    "id": 57,
+    "frase": "Entre errar e travar, escolha tentar."
+  },
+  {
+    "id": 58,
+    "frase": "A vida cobra caro, mas não entrega nota fiscal."
+  },
+  {
+    "id": 59,
+    "frase": "Tá tudo caro, inclusive ter paz."
+  },
+  {
+    "id": 60,
+    "frase": "Vai dar certo. Nem que seja por teimosia."
+  },
+  {
+    "id": 61,
+    "frase": "Se nada fizer sentido, ao menos faça um café."
+  },
+  {
+    "id": 62,
+    "frase": "O algoritmo quer sua alma. Mas você quer só 5 minutos de paz."
+  },
+  {
+    "id": 63,
+    "frase": "Tem dias que são só dias. E tudo bem."
+  },
+  {
+    "id": 64,
+    "frase": "Faz o que dá. Já é o suficiente."
+  },
+  {
+    "id": 65,
+    "frase": "Meta do dia: não sumir de si mesmo."
+  },
+  {
+    "id": 66,
+    "frase": "Desistir não tá nos planos. Reclamar sim."
+  },
+  {
+    "id": 67,
+    "frase": "Cuidado: a realidade é altamente viciante."
+  },
+  {
+    "id": 68,
+    "frase": "Acordou? Já é uma conquista."
+  },
+  {
+    "id": 69,
+    "frase": "Errar é humano. Repetir é rotina."
+  },
+  {
+    "id": 70,
+    "frase": "Não se compare com quem dormiu 8h e tomou suco verde."
+  },
+  {
+    "id": 71,
+    "frase": "A felicidade é um wi-fi que vive oscilando."
+  },
+  {
+    "id": 72,
+    "frase": "Siga mesmo sem GPS emocional."
+  },
+  {
+    "id": 73,
+    "frase": "Dizem que o tempo cura. Mas às vezes só enrola."
+  },
+  {
+    "id": 74,
+    "frase": "Seu descanso também é produtividade."
+  },
+  {
+    "id": 75,
+    "frase": "Você sobreviveu até aqui. Tem ideia da força disso?"
+  },
+  {
+    "id": 76,
+    "frase": "Aceite: o caos é parte do pacote."
+  },
+  {
+    "id": 77,
+    "frase": "Paciência é superpoder. E às vezes falha."
+  },
+  {
+    "id": 78,
+    "frase": "Se ninguém te entender hoje, tá tudo certo."
+  },
+  {
+    "id": 79,
+    "frase": "Desculpa, mundo. Hoje só tô existindo."
+  },
+  {
+    "id": 80,
+    "frase": "Seu valor não se mede por likes."
+  },
+  {
+    "id": 81,
+    "frase": "Tá difícil até de procrastinar? Tamo junto."
+  },
+  {
+    "id": 82,
+    "frase": "Você merece um prêmio por aguentar tudo calado."
+  },
+  {
+    "id": 83,
+    "frase": "Não é drama, é sobrecarga emocional mesmo."
+  },
+  {
+    "id": 84,
+    "frase": "Talvez o milagre seja só aguentar sem sumir."
+  },
+  {
+    "id": 85,
+    "frase": "Tá tudo meio torto? Respira e tenta alinhar o que der."
+  },
+  {
+    "id": 86,
+    "frase": "Se não for pra rir de nervoso, nem saio de casa."
+  },
+  {
+    "id": 87,
+    "frase": "Até as nuvens mais pesadas passam."
+  },
+  {
+    "id": 88,
+    "frase": "Um passo de cada vez. Mesmo tropeçando."
+  },
+  {
+    "id": 89,
+    "frase": "Já deu certo. Só falta o universo aceitar."
+  },
+  {
+    "id": 90,
+    "frase": "Pausa, café, e depois a gente pensa."
+  },
+  {
+    "id": 91,
+    "frase": "Tem gente pior? Tem. Mas isso não ajuda muito."
+  },
+  {
+    "id": 92,
+    "frase": "A vida anda empurrando. Então vai no embalo."
+  },
+  {
+    "id": 93,
+    "frase": "No fim do dia, você tentou. E isso conta."
+  },
+  {
+    "id": 94,
+    "frase": "A paz de espírito custa caro. Mas vale a pena."
+  },
+  {
+    "id": 95,
+    "frase": "Talvez você esteja esperando demais de hoje. Solta um pouco."
+  },
+  {
+    "id": 96,
+    "frase": "Cuidado com o excesso de cobrança. Não vira boleto."
+  },
+  {
+    "id": 97,
+    "frase": "O que não é leve, não precisa ficar."
+  },
+  {
+    "id": 98,
+    "frase": "Tem dias que só de não explodir já é vitória."
+  },
+  {
+    "id": 99,
+    "frase": "Não é frescura. É limite."
+  },
+  {
+    "id": 100,
+    "frase": "A vida às vezes parece bugada. Mas continua rodando."
+  },
+  {
+    "id": 101,
+    "frase": "Você não é fraco. Só cansado."
+  },
+  {
+    "id": 102,
+    "frase": "Todo mundo é forte até o wi-fi cair."
+  },
+  {
+    "id": 103,
+    "frase": "Seu silêncio também é resposta."
+  },
+  {
+    "id": 104,
+    "frase": "Nem todo caos vem pra ensinar. Alguns só testam."
+  }
+]
