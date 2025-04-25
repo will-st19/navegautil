@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Café | Navega Útil</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Quanto você gasta com café?</h1>
+        <p>Informe quanto custa um cafezinho e descubra o impacto (ou o prazer) no bolso.</p>
+
+        <form class="calc-form" style="margin-top: 2rem;">
+            <input type="number" id="valorCafe" placeholder="Valor de um café (ex: 4.50)" step="0.01" min="0" />
+            <button type="button" onclick="calcularGastoCafe()">Calcular</button>
+        </form>
+
+        <div id="cafeResultado" class="resultadoBox" style="display: none;"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="calculadora-cafe.js"></script>
+</body>
+
+</html>

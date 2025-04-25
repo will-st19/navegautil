@@ -493,3 +493,14 @@ nav {
     max-width: 600px;
     margin: 0 auto;
 }
+
+.resultadoBox {
+    margin-top: 2rem;
+    background-color: #f1f9fb;
+    border-left: 4px solid #004466;
+    padding: 1rem;
+    border-radius: 6px;
+    max-width: 320px;
+    font-size: 1rem;
+    color: #333;
+}
