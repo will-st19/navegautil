@@ -504,3 +504,24 @@ nav {
     font-size: 1rem;
     color: #333;
 }
+
+#resultSalario {
+    display: none;
+    margin-top: 2rem;
+    background-color: #f1f9fb;
+    border-left: 4px solid #004466;
+    padding: 1rem;
+    border-radius: 6px;
+    max-width: 320px;
+    font-size: 1rem;
+    color: #333;
+}
+
+#resultSalario p {
+    margin-bottom: 0.8rem;
+}
+
+/* Quando o resultado for gerado, torne a caixinha visível */
+#resultSalario.show {
+    display: block;
+}

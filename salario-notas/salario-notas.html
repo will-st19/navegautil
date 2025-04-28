@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seu Salário em Notas de R$1 | Navega Útil</title>
+    <meta name="description" content="Veja quanto seu salário representa em uma pilha de notas de R$ 1,00.">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Seu Salário em Notas de R$1 💸</h1>
+
+        <form id="salarioForm" class="calc-form">
+            <label for="salario">Digite seu salário (R$):</label>
+            <input type="number" id="salario" name="salario" required min="1" step="0.01">
+            <button type="submit" class="home-btn">Calcular</button>
+        </form>
+
+        <section id="resultSalario" style="margin-top:20px;"></section>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="salario-notas.js"></script>
+</body>
+
+</html>

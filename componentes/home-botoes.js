@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { texto: "Resumo CSV", link: "resumo-csv/resumo-csv.html" },
         { texto: "Frases para Status", link: "frases-status/frases-status.html" },
         { texto: "Café do Dia", link: "calculadora-cafe/calculadora-cafe.html" },
+        { texto: "Salário em Notas", link: "salario-notas/salario-notas.html" },
         { texto: "Apoie o Projeto", link: "apoie-me.html" }
     ];
 

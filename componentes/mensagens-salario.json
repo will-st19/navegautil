@@ -1,0 +1,86 @@
+[
+    {
+        "max": 5,
+        "mensagem": "Sua pilha é menor que uma caixa de fósforos! 🔥"
+    },
+    {
+        "max": 10,
+        "mensagem": "Parece uma pilha de cartas de baralho. 🃏"
+    },
+    {
+        "max": 15,
+        "mensagem": "Quase a altura de uma garrafinha de ketchup! 🍅"
+    },
+    {
+        "max": 20,
+        "mensagem": "Daria para fazer uma barricada de mini-notas! 🛡️"
+    },
+    {
+        "max": 25,
+        "mensagem": "Uma pilha mais alta que um lápis! ✏️"
+    },
+    {
+        "max": 30,
+        "mensagem": "Altura de uma régua escolar! 📏"
+    },
+    {
+        "max": 35,
+        "mensagem": "Quase uma garrafa média! 🥤"
+    },
+    {
+        "max": 40,
+        "mensagem": "Sua pilha daria para brincar de castelo de cartas! 🏰"
+    },
+    {
+        "max": 45,
+        "mensagem": "Uma pilha respeitável, altura de meio braço! 💪"
+    },
+    {
+        "max": 50,
+        "mensagem": "Dá para esconder atrás de uma bola de futebol! ⚽"
+    },
+    {
+        "max": 55,
+        "mensagem": "Altura parecida com uma guitarra pequena! 🎸"
+    },
+    {
+        "max": 60,
+        "mensagem": "Sua pilha começa a assustar! Torre de Pisa versão R$1! 🏛️"
+    },
+    {
+        "max": 65,
+        "mensagem": "Torre equivalente a uma criança pequena! 👶"
+    },
+    {
+        "max": 70,
+        "mensagem": "É quase um totem de notas! 🎇"
+    },
+    {
+        "max": 75,
+        "mensagem": "Um mini poste de luz em notas! 💡"
+    },
+    {
+        "max": 80,
+        "mensagem": "Altura impressionante, digno de registro! 📸"
+    },
+    {
+        "max": 85,
+        "mensagem": "Sua pilha faria inveja a muito mercado! 🛒"
+    },
+    {
+        "max": 90,
+        "mensagem": "Com essa pilha, já dá para ser visto à distância! 👀"
+    },
+    {
+        "max": 95,
+        "mensagem": "Uma pilha que ultrapassa mesas! 🪑"
+    },
+    {
+        "max": 100,
+        "mensagem": "Sua pilha atinge 1 metro! Um monumento! 🏗️"
+    },
+    {
+        "max": 9999999,
+        "mensagem": "Sua pilha é gigantesca! Montaria um prédio de R$1! 🏙️"
+    }
+]
