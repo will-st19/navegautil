@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Tempo de Download ⏬ | Navega Útil</title>
+    <meta name="description" content="Veja quanto tempo levaria para baixar um arquivo com sua velocidade de internet.">
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Calculadora de Tempo de Download ⏬</h1>
+        <p>Dá tempo de preparar um café? Vamos ver...</p>
+
+        <form id="downloadForm" class="calc-form">
+            <label for="tamanho">Tamanho do arquivo:</label>
+            <input type="number" id="tamanho" required min="0.01" step="0.01" placeholder="Digite o tamanho" />
+            <select id="unidadeTamanho">
+                <option value="MB">MB</option>
+                <option value="GB">GB</option>
+            </select>
+
+            <label for="velocidade">Velocidade da internet:</label>
+            <input type="number" id="velocidade" required min="0.01" step="0.01" placeholder="Digite a velocidade" />
+            <select id="unidadeVelocidade">
+                <option value="Mbps">Mbps</option>
+                <option value="MBps">MB/s</option>
+            </select>
+
+            <button type="submit" class="home-btn">Calcular</button>
+        </form>
+
+        <section id="resultado" style="margin-top:20px;"></section>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="tempo-download.js"></script>
+</body>
+
+</html>

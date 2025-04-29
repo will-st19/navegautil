@@ -525,3 +525,50 @@ nav {
 #resultSalario.show {
     display: block;
 }
+
+.resultado-download {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #f4f4f4;
+    border-left: 4px solid #4caf50;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.tempo-download-container {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.tempo-download-container label,
+.tempo-download-container select,
+.tempo-download-container input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.tempo-download-container button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#resultado.resultadoBox {
+    margin-top: 2rem;
+    background-color: #f1f9fb;
+    border-left: 4px solid #004466;
+    padding: 1rem;
+    border-radius: 6px;
+    max-width: 320px;
+    font-size: 1rem;
+    color: #333;
+}

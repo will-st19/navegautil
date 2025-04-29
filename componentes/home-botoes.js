@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { texto: "Frases para Status", link: "frases-status/frases-status.html" },
         { texto: "Café do Dia", link: "calculadora-cafe/calculadora-cafe.html" },
         { texto: "Salário em Notas", link: "salario-notas/salario-notas.html" },
+        { texto: "Tempo de Download", link: "tempo-download/tempo-download.html" },
         { texto: "Apoie o Projeto", link: "apoie-me.html" }
     ];
 
