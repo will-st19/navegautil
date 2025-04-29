@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Cartão | Navega Útil</title>
+    <meta name="description"
+        content="Simule o limite do seu cartão de crédito e descubra o que ele representa em compras. Faça o cálculo agora!">
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Simule sua Compra no Cartão 💳</h1>
+        <p>Veja quanto uma compra vai te custar com juros no cartão. A verdade às vezes dói, mas é melhor saber antes!
+        </p>
+
+        <form class="calc-form" style="margin-top: 2rem;" onsubmit="event.preventDefault(); simularCartao();">
+            <label for="valor">Valor da Compra (R$):</label>
+            <input type="number" id="valor" placeholder="Ex: 500" step="0.01" min="0" required />
+
+            <label for="juros">Taxa de juros mensal (%):</label>
+            <input type="number" id="juros" name="juros" min="0" step="0.01" value="1.5">
+
+            <label for="parcelas">Número de Parcelas:</label>
+            <select id="parcelas" required>
+                <option value="">Selecione</option>
+                <option value="1">1x sem juros</option>
+                <option value="2">2x com juros</option>
+                <option value="3">3x com juros</option>
+                <option value="4">4x com juros</option>
+                <option value="5">5x com juros</option>
+                <option value="6">6x com juros</option>
+                <option value="7">7x com juros</option>
+                <option value="8">8x com juros</option>
+                <option value="9">9x com juros</option>
+                <option value="10">10x com juros</option>
+                <option value="11">11x com juros</option>
+                <option value="12">12x com juros</option>
+                <option value="13">13x com juros</option>
+                <option value="14">14x com juros</option>
+                <option value="15">15x com juros</option>
+                <option value="16">16x com juros</option>
+                <option value="17">17x com juros</option>
+                <option value="18">18x com juros</option>
+                <option value="19">19x com juros</option>
+                <option value="20">20x com juros</option>
+                <option value="21">21x com juros</option>
+                <option value="22">22x com juros</option>
+                <option value="23">23x com juros</option>
+                <option value="24">24x com juros</option>
+            </select>
+
+            <button type="submit">Simular</button>
+        </form>
+
+        <div id="cartaoResultado" style="display: none; margin-top: 20px;">
+            <div id="resultado" class="resultadoBox"></div>
+        </div>
+
+        <div id="mensagem-explicativa" class="mensagem" style="margin-top: 10px;"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="simulador-cartao.js"></script>
+</body>
+
+</html>
