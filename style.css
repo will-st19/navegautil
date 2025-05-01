@@ -1,4 +1,6 @@
-/* Reset simples */
+/*--------------------------------------------------------------
+  Reset e Base
+--------------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,9 @@ body {
     min-height: 100vh;
 }
 
+/*--------------------------------------------------------------
+  Header, Logo e Navegação
+--------------------------------------------------------------*/
 header {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
@@ -25,8 +30,24 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* Navegação unificada e Dropdown */
 nav {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -43,6 +64,54 @@ nav a:hover {
     border-radius: 4px;
 }
 
+/* Dropdown – regra única para ambas as versões anteriores */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: #004466;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: background 0.2s;
+}
+
+.dropbtn:hover {
+    background-color: #e1f0f5;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: #004466;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #e1f0f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu Toggle para mobile */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -61,6 +130,9 @@ nav a:hover {
     display: flex;
 }
 
+/*--------------------------------------------------------------
+  Media Queries (Mobile)
+--------------------------------------------------------------*/
 @media (max-width: 768px) {
     #menu {
         display: none;
@@ -96,16 +168,30 @@ nav a:hover {
     }
 }
 
+/*--------------------------------------------------------------
+  Main e Footer
+--------------------------------------------------------------*/
+/* Main permanece com rolagem, com espaço extra para não ficar atrás do footer */
 main {
     flex: 1;
     padding: 2rem;
+    overflow-y: auto;
+    padding-bottom: 105px;
+    /* Espaço igual à altura do footer */
 }
 
+/* Footer fixo sempre visível */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    /* Ajuste conforme a necessidade */
     background-color: #eee;
-    padding: 1rem;
+    padding: 0.9rem;
     text-align: center;
-    margin-top: auto;
+    z-index: 10;
 }
 
 footer a {
@@ -119,6 +205,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/*--------------------------------------------------------------
+  Botões e Links
+--------------------------------------------------------------*/
 .btn-apoie {
     background-color: #28a745;
     color: white;
@@ -133,25 +222,31 @@ footer a:hover {
     background-color: #218838;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 15px;
+.btn-home {
+    width: 100%;
+    max-width: 300px;
+    background-color: #004466;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    text-align: center;
 }
 
-.logo img {
-    max-height: 50px;
-    width: auto;
-    height: auto;
-    cursor: pointer;
+.btn-home:hover {
+    background-color: #006688;
 }
 
+/*--------------------------------------------------------------
+  Formulários e Inputs – CEP e Cálculos
+--------------------------------------------------------------*/
 .cep-form {
     display: flex;
     gap: 1rem;
-    margin-bottom: 1.5rem;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
 }
 
 .cep-form input {
@@ -200,194 +295,7 @@ iframe#mapa {
     border-radius: 4px;
 }
 
-.apoie-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-.apoie-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.apoie-qrcode img {
-    max-width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.apoie-copiaecola input {
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    font-size: 1rem;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-/* Dropdowns no menu */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropbtn {
-    background: none;
-    border: none;
-    color: #004466;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 6px 8px;
-}
-
-.dropbtn:hover {
-    background-color: #e1f0f5;
-    border-radius: 4px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    min-width: 160px;
-    z-index: 1;
-    flex-direction: column;
-}
-
-.dropdown-content a {
-    color: #004466;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #e1f0f5;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-
-    .dropdown-content {
-        position: static;
-        border: none;
-        background-color: transparent;
-    }
-
-    .dropdown-content a {
-        padding-left: 1.5rem;
-    }
-}
-
-
-/* Dropdown simples para o menu */
-.dropdown {
-    position: relative;
-}
-
-.dropbtn {
-    background: none;
-    border: none;
-    color: #004466;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 6px 8px;
-    text-decoration: none;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.dropbtn:hover {
-    background-color: #e1f0f5;
-    border-radius: 4px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    min-width: 160px;
-    z-index: 1;
-    flex-direction: column;
-}
-
-.dropdown-content a {
-    color: #004466;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #e1f0f5;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Ajustes para modo escuro forçado do navegador */
-@media (prefers-color-scheme: dark) {
-
-    body,
-    header,
-    nav,
-    .dropdown-content,
-    input,
-    select,
-    .cep-form input,
-    .apoie-copiaecola input {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        border-color: #ccc !important;
-    }
-
-    nav a,
-    .dropbtn,
-    .dropdown-content a {
-        color: #004466 !important;
-    }
-
-    .dropdown-content a:hover {
-        background-color: #e1f0f5 !important;
-    }
-
-    .btn-apoie {
-        background-color: #28a745 !important;
-        color: white !important;
-        border-color: #28a745 !important;
-    }
-
-    iframe#mapa {
-        filter: none !important;
-    }
-}
-
-
-
-/* Estilo padrão para formulários de cálculo (IMC, Regra de 3, etc) */
+/* Formulário para Cálculos (IMC, Regra de 3, etc) */
 .calc-form {
     display: flex;
     flex-direction: column;
@@ -419,8 +327,6 @@ nav {
     transition: background 0.2s;
 }
 
-
-
 .calc-form button:hover {
     background-color: #006688;
 }
@@ -435,16 +341,9 @@ nav {
     max-width: 200px;
 }
 
-@media (prefers-color-scheme: dark) {
-    .calc-form select {
-        background-color: #1f1f1f;
-        color: #f0f0f0;
-        border-color: #666;
-    }
-}
-
-
-/* Margem entre historinha e tabela */
+/*--------------------------------------------------------------
+  Outros Componentes e Elementos de Conteúdo
+--------------------------------------------------------------*/
 #historinha {
     margin-bottom: 1.5rem;
 }
@@ -455,23 +354,6 @@ nav {
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-}
-
-.btn-home {
-    width: 100%;
-    max-width: 300px;
-    background-color: #004466;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.2s ease;
-    text-align: center;
-}
-
-.btn-home:hover {
-    background-color: #006688;
 }
 
 #dicaTexto {
@@ -521,7 +403,7 @@ nav {
     margin-bottom: 0.8rem;
 }
 
-/* Quando o resultado for gerado, torne a caixinha visível */
+/* Exibir caixa de salário quando necessário */
 #resultSalario.show {
     display: block;
 }
@@ -562,17 +444,7 @@ nav {
     border-radius: 5px;
 }
 
-#resultado.resultadoBox {
-    margin-top: 2rem;
-    background-color: #f1f9fb;
-    border-left: 4px solid #004466;
-    padding: 1rem;
-    border-radius: 6px;
-    max-width: 320px;
-    font-size: 1rem;
-    color: #333;
-}
-
+/* Elementos ocultos */
 #cartaoResultado {
     display: none;
 }
@@ -588,4 +460,265 @@ nav {
     color: #333;
     max-width: 320px;
     width: 100%;
+}
+
+/* Estilos gerais para a página de apoio */
+.apoie-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+/* Frase de humor leve */
+.apoie-humor {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+/* Bloco principal com QR Code e campo de cópia */
+.apoie-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 2rem 0;
+}
+
+/* Cada coluna dentro do bloco de apoio */
+.apoie-qrcode,
+.apoie-copiaecola {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajuste de tamanho para o QR Code */
+.apoie-qrcode img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+/* Container para o campo de cópia com botão lateral */
+.copy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+    max-width: 350px;
+}
+
+.copy-container input {
+    flex: 1;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    margin-bottom: 10px;
+}
+
+.copy-container .copy-btn {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    width: auto;
+}
+
+.copy-container .copy-btn:hover {
+    background-color: #218838;
+}
+
+/* Mensagem de agradecimento */
+.apoie-agradecimento {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/*--------------------------------------------------------------
+  Modo Escuro (forçado via prefers-color-scheme)
+--------------------------------------------------------------*/
+@media (prefers-color-scheme: dark) {
+
+    body,
+    header,
+    nav,
+    .dropdown-content,
+    input,
+    select,
+    .cep-form input,
+    .apoie-copiaecola input {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: #ccc !important;
+    }
+
+    nav a,
+    .dropbtn,
+    .dropdown-content a {
+        color: #004466 !important;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #e1f0f5 !important;
+    }
+
+    .btn-apoie {
+        background-color: #28a745 !important;
+        color: white !important;
+        border-color: #28a745 !important;
+    }
+
+    iframe#mapa {
+        filter: none !important;
+    }
+}
+
+/*--------------------------------------------------------------
+  Estilos para Cards (para as páginas intermediárias, ex: Consultas)
+--------------------------------------------------------------*/
+.cards-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+/* Estilo para botões dentro do card quando usando a classe btn-home */
+.card a.btn-home {
+    display: block;
+    /* Garante que o botão ocupe toda a linha */
+    margin-top: 15px;
+    /* Espaço acima do botão, afastando-o do parágrafo */
+    padding: 10px 15px;
+    background-color: #004466;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    /* Garante que o botão não fique excessivamente largo */
+}
+
+.card a.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #004466;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.card a.button:hover {
+    background-color: #006688;
+}
+
+/* Container para os blocos de categoria na home */
+.home-categories {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+/* Em mobile, empilha os blocos verticalmente */
+@media (max-width: 768px) {
+    .home-categories {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Card Externo para Categorias */
+.category-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Agrupamento dos cards internos como coluna */
+.card-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Ajuste dos cards internos */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Exemplo de hover para dar destaque */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }

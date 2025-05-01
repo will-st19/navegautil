@@ -22,32 +22,40 @@
 
     <main class="apoie-container">
         <h1>Apoie o Projeto</h1>
-        <p>Este site foi criado com simplicidade e dedicação, com o objetivo de te oferecer ferramentas úteis de forma
-            leve e prática.</p>
-        <p>Se você gostou do conteúdo e quiser apoiar, qualquer valor faz diferença!</p>
+        <p>
+            Este site foi criado com simplicidade e dedicação para oferecer ferramentas úteis
+            de forma leve e prática.
+        </p>
+        <p>
+            Se você gostou do conteúdo e quiser apoiar, qualquer valor faz toda a diferença!
+        </p>
 
+        <!-- Bloco com QR Code e Campo para copiar o código Pix -->
         <div class="apoie-box">
             <div class="apoie-qrcode">
                 <p><strong>Escaneie o QR Code:</strong></p>
-                <img src="imgs/qr-pix.png" alt="QR Code do Pix" />
+                <img src="imgs/qr-pix.png" alt="QR Code do Pix">
             </div>
 
             <div class="apoie-copiaecola">
                 <p><strong>Ou copie o código Pix:</strong></p>
-                <input type="text" id="pix-codigo"
-                    value="00020126820014br.gov.bcb.pix0136826f646a-9488-466a-ac6d-bc76a0db68f00220Obrigado por ajudar 5204000053039865802BR5925William Silveira Teixeira6008Brasilia62230519daqr20519228529591463044A8C"
-                    readonly>
-                <button class="btn-apoie" onclick="copiarPix()">Copiar código Pix</button>
+                <div class="copy-container">
+                    <input type="text" id="pix-codigo"
+                        value="00020126820014br.gov.bcb.pix0136826f646a-9488-466a-ac6d-bc76a0db68f00220Obrigado por ajudar 5204000053039865802BR5925William Silveira Teixeira6008Brasilia62230519daqr20519228529591463044A8C"
+                        readonly>
+                    <button class="copy-btn" onclick="copiarPix()">Copiar código PIX</button>
+                </div>
             </div>
         </div>
 
-        <p style="margin-top: 1rem; font-size: 0.95rem; color: #555;">Muito obrigado pelo apoio! 💚</p>
+        <p class="apoie-agradecimento">Muito obrigado pelo apoio! 💚</p>
     </main>
+
 
     <footer></footer>
 
     <script src="../componentes/layout.js"></script>
-    
+
     <script>
         function copiarPix() {
             const input = document.getElementById("pix-codigo");
