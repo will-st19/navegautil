@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerador de Desculpas Aleatórias | Navega Útil</title>
+    <meta name="description"
+        content="Precisa de uma desculpa para sair dessa? Descubra desculpas aleatórias e engraçadas com bom humor, só no Navega Útil.">
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        /* Ajuste local para container de botões */
+        .botoes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 1rem;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Gerador de Desculpas Aleatórias</h1>
+        <p>Precisa de uma desculpa para sair dessa? Aqui vai uma:</p>
+
+        <div id="resultado" class="resultadoBox"
+            style="margin-top:1.2rem; margin-bottom:1.2rem; font-size:1.2rem; font-weight:bold;"></div>
+
+        <div class="botoes-container">
+            <button id="gerar-btn" class="btn-home">Gerar Desculpa</button>
+            <button id="copiar-btn" class="btn-home" style="margin-left:10px;">Copiar Desculpa</button>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="gerador-desculpas.js"></script>
+</body>
+
+</html>
