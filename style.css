@@ -283,7 +283,6 @@ footer a:hover {
     flex: 1;
     min-width: 250px;
     max-width: 500px;
-    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -344,8 +343,26 @@ iframe#mapa {
 /*--------------------------------------------------------------
   Outros Componentes e Elementos de Conteúdo
 --------------------------------------------------------------*/
+/*
 #historinha {
     margin-bottom: 1.5rem;
+}
+*/
+/* Estilo para o histórico / dica (historinha) */
+#historinha {
+    margin-top: 2rem;
+    background-color: #e8f5e9;
+    /* tom sutilmente esverdeado, diferente do resultado */
+    border-left: 4px solid #2e7d32;
+    /* cor verde mais escura para contraste */
+    padding: 1.2rem;
+    border-radius: 6px;
+    min-width: 250px;
+    max-width: 500px;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .home-buttons {
@@ -376,15 +393,18 @@ iframe#mapa {
     margin: 0 auto;
 }
 
+/* Estilo aprimorado para o resultado */
 .resultadoBox {
     margin-top: 2rem;
     background-color: #f1f9fb;
     border-left: 4px solid #004466;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 6px;
-    max-width: 320px;
-    font-size: 1rem;
+    max-width: 500px;
+    font-size: 1.2rem;
     color: #333;
+    line-height: 1.6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #resultSalario {

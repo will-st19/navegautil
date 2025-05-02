@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Porcentagem | Navega Útil</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta name="description"
+        content="Escolha o tipo de cálculo e preencha os campos para calcular porcentagens de forma simples.">
+    <link rel="stylesheet" href="../style.css" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
@@ -13,20 +15,18 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-2662XNH7F6');
     </script>
 </head>
 
 <body>
-
     <header></header>
 
     <main>
         <h1>Calculadora de Porcentagem</h1>
         <p>Escolha o tipo de cálculo e preencha os campos.</p>
 
-        <form class="calc-form">
+        <form class="calc-form" style="margin-top: 2rem;">
             <select id="tipo">
                 <option value="1">Quanto é X% de Y?</option>
                 <option value="2">X é quantos % de Y?</option>
@@ -36,10 +36,11 @@
             <input type="number" id="valor1" placeholder="Valor 1">
             <input type="number" id="valor2" placeholder="Valor 2">
             <button type="button" onclick="calcularPorcentagem()">Calcular</button>
-
-            <p id="resultado"></p>
-            <p id="explicacao"></p>
         </form>
+
+        <!-- Blocos de resultado ajustados conforme o modelo padrão -->
+        <div id="resultado" class="resultadoBox" style="display: none; margin-top: 1.2rem; font-weight: bold;"></div>
+        <div id="historinha" style="display: none; margin-top: 1.2rem;"></div>
     </main>
 
     <footer></footer>

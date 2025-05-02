@@ -1,0 +1,110 @@
+[
+    {
+        "nome": "Áries",
+        "elemento": "Fogo",
+        "dia_ini": 21,
+        "mes_ini": 3,
+        "dia_fim": 19,
+        "mes_fim": 4,
+        "historinha": "Você nasceu com a energia de Áries – pura chama e coragem. Divirta-se incendiando desafios!"
+    },
+    {
+        "nome": "Touro",
+        "elemento": "Terra",
+        "dia_ini": 20,
+        "mes_ini": 4,
+        "dia_fim": 20,
+        "mes_fim": 5,
+        "historinha": "Touro, firme como a terra e doce como a vida. Curta seu caminho com tranquilidade!"
+    },
+    {
+        "nome": "Gêmeos",
+        "elemento": "Ar",
+        "dia_ini": 21,
+        "mes_ini": 5,
+        "dia_fim": 20,
+        "mes_fim": 6,
+        "historinha": "Gêmeos, nascido para conversar e surpreender. O ar ao seu redor está sempre cheio de ideias!"
+    },
+    {
+        "nome": "Câncer",
+        "elemento": "Água",
+        "dia_ini": 21,
+        "mes_ini": 6,
+        "dia_fim": 22,
+        "mes_fim": 7,
+        "historinha": "Câncer, sua sensibilidade é sua força. Deixe a água levar tudo e sorria com seu encanto!"
+    },
+    {
+        "nome": "Leão",
+        "elemento": "Fogo",
+        "dia_ini": 23,
+        "mes_ini": 7,
+        "dia_fim": 22,
+        "mes_fim": 8,
+        "historinha": "Leão, com seu brilho inigualável, você ilumina o mundo. Sorria, seu rugido inspira alegria!"
+    },
+    {
+        "nome": "Virgem",
+        "elemento": "Terra",
+        "dia_ini": 23,
+        "mes_ini": 8,
+        "dia_fim": 22,
+        "mes_fim": 9,
+        "historinha": "Virgem, sua atenção aos detalhes transforma tudo em ordem e beleza. Aproveite cada pequeno detalhe!"
+    },
+    {
+        "nome": "Libra",
+        "elemento": "Ar",
+        "dia_ini": 23,
+        "mes_ini": 9,
+        "dia_fim": 22,
+        "mes_fim": 10,
+        "historinha": "Libra, em busca do equilíbrio e da harmonia, seu charme equilibra qualquer situação com leveza!"
+    },
+    {
+        "nome": "Escorpião",
+        "elemento": "Água",
+        "dia_ini": 23,
+        "mes_ini": 10,
+        "dia_fim": 21,
+        "mes_fim": 11,
+        "historinha": "Escorpião, a intensidade e o mistério são suas marcas. Seu olhar profundo revela segredos divertidos!"
+    },
+    {
+        "nome": "Sagitário",
+        "elemento": "Fogo",
+        "dia_ini": 22,
+        "mes_ini": 11,
+        "dia_fim": 21,
+        "mes_fim": 12,
+        "historinha": "Sagitário, aventureiro e optimista, você explora o mundo com risadas e entusiasmo!"
+    },
+    {
+        "nome": "Capricórnio",
+        "elemento": "Terra",
+        "dia_ini": 22,
+        "mes_ini": 12,
+        "dia_fim": 19,
+        "mes_fim": 1,
+        "historinha": "Capricórnio, determinado e prático, você escala a vida com seriedade e um toque de humor refinado!"
+    },
+    {
+        "nome": "Aquário",
+        "elemento": "Ar",
+        "dia_ini": 20,
+        "mes_ini": 1,
+        "dia_fim": 18,
+        "mes_fim": 2,
+        "historinha": "Aquário, inovador e livre, sua mente é um sopro de ar fresco que inspira todos à sua volta!"
+    },
+    {
+        "nome": "Peixes",
+        "elemento": "Água",
+        "dia_ini": 19,
+        "mes_ini": 2,
+        "dia_fim": 20,
+        "mes_fim": 3,
+        "historinha": "Peixes, sonhador e sensível, você nada nas profundezas da imaginação com um sorriso encantador!"
+    }
+]

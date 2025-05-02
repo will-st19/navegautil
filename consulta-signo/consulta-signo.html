@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Signo | Navega Útil</title>
+    <meta name="description"
+        content="Digite seu dia e mês de nascimento para descobrir seu signo, elemento e uma mensagem divertida.">
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Consulta de Signo</h1>
+        <p>Informe o dia e o mês do seu nascimento para descobrir seu signo e elemento.</p>
+
+        <form class="calc-form" style="margin-top: 2rem;">
+            <input type="number" id="diaInput" placeholder="Dia (ex: 20)" min="1" max="31">
+            <input type="number" id="mesInput" placeholder="Mês (ex: 04)" min="1" max="12">
+            <button type="button" onclick="consultarSigno()">Consultar</button>
+        </form>
+
+        <!-- Área de resultado -->
+        <section id="resultado" class="resultadoBox" style="display:none; margin-top:2rem;"></section>
+
+        <!-- Área de historinha com humor leve -->
+        <section id="historinha" style="display:none; margin-top:2rem;"></section>
+    </main>
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="consulta-signo.js"></script>
+</body>
+
+</html>
