@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contador de Dias | Navega Útil</title>
+    <title>Diferença entre Datas | Navega Útil</title>
+    <meta name="description" content="Escolha duas datas e veja quantos dias se passaram entre elas.">
     <link rel="stylesheet" href="../style.css" />
 
     <!-- Google tag (gtag.js) -->
@@ -13,7 +14,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-2662XNH7F6');
     </script>
 </head>
@@ -22,18 +22,17 @@
     <header></header>
 
     <main>
-        <h1>Contador de Dias</h1>
+        <h1>Diferença entre Datas</h1>
         <p>Escolha duas datas e veja quantos dias se passaram entre elas.</p>
 
-        <div style="justify-content: center;">
-            <form class="calc-form">
-                <input type="date" id="dataInicio" />
-                <input type="date" id="dataFim" />
-                <button type="button" onclick="calcularDias()">Calcular</button>
-                <p id="resultado" style="font-weight: bold; margin-top: 1rem;"></p>
-                <p id="explicacao" style="font-size: 0.95rem; color: #444;"></p>
-            </form>
-        </div>
+        <form class="calc-form">
+            <input type="date" id="dataInicio" />
+            <input type="date" id="dataFim" />
+            <button type="button" onclick="executarCalculo()">Calcular</button>
+        </form>
+
+        <div id="resultado" class="resultadoBox" style="display: none; font-weight: bold;"></div>
+        <div id="historinha" style="display: none; margin-top: 2rem;"></div>
     </main>
 
     <footer></footer>

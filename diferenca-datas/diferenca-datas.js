@@ -1,12 +1,14 @@
-function calcularDias() {
+async function executarCalculo() {
     const inicio = new Date(document.getElementById("dataInicio").value);
     const fim = new Date(document.getElementById("dataFim").value);
     const resultado = document.getElementById("resultado");
-    const explicacao = document.getElementById("explicacao");
+    const historinha = document.getElementById("historinha");
 
     if (isNaN(inicio) || isNaN(fim)) {
         resultado.textContent = "Preencha as duas datas corretamente.";
-        explicacao.textContent = "";
+        historinha.textContent = "";
+        resultado.style.display = "block";
+        historinha.style.display = "none";
         return;
     }
 
@@ -14,20 +16,27 @@ function calcularDias() {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
     resultado.textContent = `Diferença: ${diffDays} ${diffDays === 1 ? "dia" : "dias"}`;
+    resultado.style.display = "block";
 
-    // Historinha suave
-    let texto = "";
-    if (diffDays === 0) {
-        texto = "É o mesmo dia! Nem deu tempo de sentir saudade.";
-    } else if (diffDays <= 7) {
-        texto = "Foi só uma semaninha… dá pra encarar.";
-    } else if (diffDays <= 30) {
-        texto = "Mais de uma semana já é saudade com gosto.";
-    } else if (diffDays <= 365) {
-        texto = "Foi um bom tempo. Que tal marcar na agenda?";
-    } else {
-        texto = "Essa diferença é digna de outro século (ou quase).";
-    }
+    // Buscar mensagens do JSON
+    fetch("../componentes/dif-datas.json")
+        .then(response => response.json())
+        .then(mensagens => {
+            let texto = mensagens["7301+"]; // Padrão caso nenhuma faixa seja encontrada
 
-    explicacao.textContent = texto;
+            for (const faixa in mensagens) {
+                if (faixa.includes("-")) {
+                    const [min, max] = faixa.split("-").map(Number);
+                    if (diffDays >= min && diffDays <= max) {
+                        texto = mensagens[faixa];
+                        break;
+                    }
+                } else if (diffDays >= parseInt(faixa)) {
+                    texto = mensagens[faixa];
+                }
+            }
+
+            historinha.textContent = texto;
+            historinha.style.display = "block";
+        });
 }
