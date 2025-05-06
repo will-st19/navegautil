@@ -365,6 +365,17 @@ iframe#mapa {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#imagemEstacao img {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 500px;
+    max-height: 120px;
+    /* Ajuste o valor conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 .home-buttons {
     display: flex;
     flex-wrap: wrap;
