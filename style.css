@@ -171,14 +171,19 @@ nav a:hover {
 /*--------------------------------------------------------------
   Main e Footer
 --------------------------------------------------------------*/
-/* Main permanece com rolagem, com espaço extra para não ficar atrás do footer */
+/* Main com rolagem garantida mesmo em iPhones/Safari */
 main {
     flex: 1;
     padding: 2rem;
-    overflow-y: auto;
-    padding-bottom: 105px;
-    /* Espaço igual à altura do footer */
+    padding-bottom: 120px;
+    /* altura do footer + segurança */
+    box-sizing: border-box;
+    min-height: 0;
+    /* ⚠️ Essencial para Safari/iOS */
+    overflow: auto;
+    /* Garante rolagem do conteúdo */
 }
+
 
 /* Footer fixo sempre visível */
 footer {
@@ -752,4 +757,44 @@ iframe#mapa {
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-container {
+    max-width: 700px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    line-height: 1.8;
+    color: #333;
+}
+
+.blog-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    text-align: right;
+}
+
+.blog-texto p {
+    margin-bottom: 1.2rem;
+}
+
+.blog-cta {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-left: 4px solid #004466;
+    background-color: #f4f9fb;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.blog-container h1 {
+    font-size: 1.8rem;
+    word-break: break-word;
+    line-height: 1.3;
+}
+
+@media (max-width: 480px) {
+    .blog-container h1 {
+        font-size: 1.4rem;
+    }
 }
