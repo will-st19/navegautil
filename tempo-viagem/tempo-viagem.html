@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Tempo de Viagem | Navega Útil</title>
+    <meta name="description" content="Informe a distância e a velocidade média para calcular o tempo estimado da sua viagem." />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2662XNH7F6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2662XNH7F6');
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <main>
+        <h1>Calculadora de Tempo de Viagem</h1>
+        <p>Informe a distância e a velocidade média para calcular o tempo estimado.</p>
+    
+        <form class="calc-form" style="margin-top: 2rem;">
+            <input type="number" id="distancia" placeholder="Distância (km)">
+            <input type="number" id="velocidade" placeholder="Velocidade média (km/h)">
+            <button type="button" onclick="calcularTempoViagem()">Calcular</button>
+        </form>
+    
+        <div id="resultado" class="resultadoBox" style="display: none; margin-top: 1.2rem; font-weight: bold;"></div>
+        <div id="historinha" style="display: none; margin-top: 1.2rem;"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../componentes/layout.js"></script>
+    <script src="tempo-viagem.js"></script>
+</body>
+
+</html>
