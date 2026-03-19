@@ -16,41 +16,44 @@ function obterProximoCiclo(estacao, dataBase) {
     const ano = dataBase.getFullYear();
     let inicio, fim;
 
-    // 1. Definir as datas base para o ano ATUAL
+    // Usando new Date(ano, mes-1, dia) para garantir horário LOCAL
     switch (estacao) {
         case "verao":
-            // O verão é o único que "pula" o ano no fim
-            inicio = new Date(`${ano - 1}-12-21`);
-            fim = new Date(`${ano}-03-19`);
+            // Ciclo que termina agora em Março de 2026
+            inicio = new Date(ano - 1, 11, 21); // 21 Dez anterior
+            fim = new Date(ano, 2, 19);         // 19 Mar atual
             
-            // Se hoje já passou do fim do verão atual, o próximo é no fim deste ano
-            if (dataBase > fim) {
-                inicio = new Date(`${ano}-12-21`);
-                fim = new Date(`${ano + 1}-03-19`);
+            // Se hoje já passou do fim do dia 19, pula para o próximo Verão
+            // Comparamos apenas as datas (setHours(0,0,0,0)) para evitar erro de minutos
+            const hojeApenasData = new Date(dataBase.getTime()).setHours(0,0,0,0);
+            const fimApenasData = new Date(fim.getTime()).setHours(0,0,0,0);
+
+            if (hojeApenasData > fimApenasData) {
+                inicio = new Date(ano, 11, 21); // 21 Dez deste ano
+                fim = new Date(ano + 1, 2, 19); // 19 Mar do ano que vem
             }
             break;
 
         case "outono":
-            inicio = new Date(`${ano}-03-20`);
-            fim = new Date(`${ano}-06-20`);
+            inicio = new Date(ano, 2, 20); // 20 Mar
+            fim = new Date(ano, 5, 20);    // 20 Jun
             break;
 
         case "inverno":
-            inicio = new Date(`${ano}-06-21`);
-            fim = new Date(`${ano}-09-22`);
+            inicio = new Date(ano, 5, 21); // 21 Jun
+            fim = new Date(ano, 8, 22);    // 22 Set
             break;
 
         case "primavera":
-            inicio = new Date(`${ano}-09-23`);
-            fim = new Date(`${ano}-12-20`);
+            inicio = new Date(ano, 8, 23); // 23 Set
+            fim = new Date(ano, 11, 20);   // 20 Dez
             break;
     }
 
-    // 2. Ajuste Universal: Se a estação (exceto verão que já tratamos) 
-    // já passou este ano, joga para o ano que vem.
+    // Ajuste para outras estações se já tiverem passado no ano atual
     if (estacao !== "verao" && dataBase > fim) {
-        inicio.setFullYear(ano + 1);
-        fim.setFullYear(ano + 1);
+        inicio.setFullYear(inicio.getFullYear() + 1);
+        fim.setFullYear(fim.getFullYear() + 1);
     }
 
     return { inicio, fim };
