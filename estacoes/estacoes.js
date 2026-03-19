@@ -13,45 +13,43 @@ else estacao = "desconhecida";
 
 // Retorna o próximo ciclo (início e fim) da estação
 function obterProximoCiclo(estacao, dataBase) {
-    const ano = dataBase.getFullYear();
+    // Normaliza a data atual para "meia-noite local" para comparação justa
+    const hoje = new Date(dataBase.getFullYear(), dataBase.getMonth(), dataBase.getDate());
+    const ano = hoje.getFullYear();
     let inicio, fim;
 
-    // Usando new Date(ano, mes-1, dia) para garantir horário LOCAL
+    // Janeiro no JS é 0, Março é 2, Dezembro é 11.
     switch (estacao) {
         case "verao":
-            // Ciclo que termina agora em Março de 2026
-            inicio = new Date(ano - 1, 11, 21); // 21 Dez anterior
-            fim = new Date(ano, 2, 19);         // 19 Mar atual
+            // Primeiro, testamos o ciclo que termina este ano (Março de 2026)
+            inicio = new Date(ano - 1, 11, 21); // 21 de Dezembro do ano passado
+            fim = new Date(ano, 2, 19);         // 19 de Março deste ano
             
-            // Se hoje já passou do fim do dia 19, pula para o próximo Verão
-            // Comparamos apenas as datas (setHours(0,0,0,0)) para evitar erro de minutos
-            const hojeApenasData = new Date(dataBase.getTime()).setHours(0,0,0,0);
-            const fimApenasData = new Date(fim.getTime()).setHours(0,0,0,0);
-
-            if (hojeApenasData > fimApenasData) {
-                inicio = new Date(ano, 11, 21); // 21 Dez deste ano
-                fim = new Date(ano + 1, 2, 19); // 19 Mar do ano que vem
+            // Se hoje já passou do dia 19/03, o alvo passa a ser o próximo verão (Dez/2026)
+            if (hoje > fim) {
+                inicio = new Date(ano, 11, 21);
+                fim = new Date(ano + 1, 2, 19);
             }
             break;
 
         case "outono":
-            inicio = new Date(ano, 2, 20); // 20 Mar
-            fim = new Date(ano, 5, 20);    // 20 Jun
+            inicio = new Date(ano, 2, 20);
+            fim = new Date(ano, 5, 20);
             break;
 
         case "inverno":
-            inicio = new Date(ano, 5, 21); // 21 Jun
-            fim = new Date(ano, 8, 22);    // 22 Set
+            inicio = new Date(ano, 5, 21);
+            fim = new Date(ano, 8, 22);
             break;
 
         case "primavera":
-            inicio = new Date(ano, 8, 23); // 23 Set
-            fim = new Date(ano, 11, 20);   // 20 Dez
+            inicio = new Date(ano, 8, 23);
+            fim = new Date(ano, 11, 20);
             break;
     }
 
-    // Ajuste para outras estações se já tiverem passado no ano atual
-    if (estacao !== "verao" && dataBase > fim) {
+    // Para as outras estações, se hoje passou do fim, joga para o ano que vem
+    if (estacao !== "verao" && hoje > fim) {
         inicio.setFullYear(inicio.getFullYear() + 1);
         fim.setFullYear(fim.getFullYear() + 1);
     }
