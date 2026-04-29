@@ -5,9 +5,11 @@ function calcularLucroShopee() {
     const resultadoEl = document.getElementById("resultado");
     const margemEl = document.getElementById("margem");
     const avisoEl = document.getElementById("aviso");
+    const btnLimpar = document.getElementById("btnLimpar"); // Pegar a referência
 
     if (isNaN(custo) || isNaN(venda) || venda <= 0) {
         resultadoEl.textContent = "Insira valores válidos para calcular.";
+        btnLimpar.disabled = true; // SE DER ERRO, MANTÉM OU VOLTA A FICAR DESABILITADO
         return;
     }
 
@@ -35,8 +37,8 @@ function calcularLucroShopee() {
         avisoEl.textContent = "✅ Margem aceitável. Pode preparar a embalagem!";
     }
 
-    // Habilita o botão limpar após o cálculo
-    document.getElementById("btnLimpar").disabled = false;
+    // Habilita o botão limpar após o cálculo bem-sucedido
+    btnLimpar.disabled = false;
 }
 
 function limparCalculadora() {

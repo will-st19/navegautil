@@ -345,6 +345,14 @@ iframe#mapa {
     max-width: 200px;
 }
 
+.calc-form button:disabled {
+    background-color: #ccc !important;
+    color: #666 !important;
+    cursor: not-allowed !important; /* Remove a mãozinha e coloca o ícone de 'proibido' */
+    border: 1px solid #999 !important;
+    opacity: 0.7;
+}
+
 /*--------------------------------------------------------------
   Outros Componentes e Elementos de Conteúdo
 --------------------------------------------------------------*/
