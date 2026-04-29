@@ -34,4 +34,21 @@ function calcularLucroShopee() {
         avisoEl.style.color = "green";
         avisoEl.textContent = "✅ Margem aceitável. Pode preparar a embalagem!";
     }
+
+    // Habilita o botão limpar após o cálculo
+    document.getElementById("btnLimpar").disabled = false;
+}
+
+function limparCalculadora() {
+    // Limpa os inputs
+    document.getElementById("custo").value = "";
+    document.getElementById("venda").value = "";
+    
+    // Limpa os textos de resultado
+    document.getElementById("resultado").textContent = "";
+    document.getElementById("margem").textContent = "";
+    document.getElementById("aviso").textContent = "";
+    
+    // Desabilita o botão novamente (estado inicial)
+    document.getElementById("btnLimpar").disabled = true;
 }
